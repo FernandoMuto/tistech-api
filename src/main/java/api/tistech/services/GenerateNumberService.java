@@ -13,10 +13,7 @@ import java.util.Iterator;
  *
  * @author Fernando Muto
  */
-public class GenerateNumberService {
-    
-    
-    
+public class GenerateNumberService { 
     
     public int createNumberC(int firstNumber, int secondNumber){
     
@@ -45,7 +42,7 @@ public class GenerateNumberService {
             strb.append(obj);
         });
         
-        int resultNumber = Integer.valueOf(strb.toString()); 
+        int resultNumber = Integer.valueOf(strb.toString()); // casting para facilitar a validação
         
         return resultNumber > 1000000 ? -1 : resultNumber; 
     }
